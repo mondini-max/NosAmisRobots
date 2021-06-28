@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import CardList from './components/CardList';
-import Searchbox from './components/Searchbox';
+import CardList from '../components/CardList';
+import Searchbox from '../components/Searchbox';
 import './App.css';
-import Scroll from './components/Scroll';
+import Scroll from '../components/Scroll';
+import Footer from '../components/Footer';
 
 class App extends Component {
   constructor() {
@@ -25,26 +26,24 @@ class App extends Component {
     this.setState({ searchfield: search });
   };
   render() {
-    const searchedRobot = this.state.robots.filter((robot) => {
-      return robot.name
-        .toLowerCase()
-        .includes(this.state.searchfield.toLowerCase());
+    const { robots, searchfield } = this.state;
+    const searchedRobot = robots.filter((robot) => {
+      return robot.name.toLowerCase().includes(searchfield.toLowerCase());
     });
     // console.log('test performance 3', 'render()');
     // console.log(searchedRobot);
-    if (this.state.robots === 0) {
-      return <h1>Loading</h1>;
-    } else {
-      return (
-        <div className='tc'>
-          <h1 className='f2'>Robot friends</h1>
-          <Searchbox searchChange={this.onSearchChange} />
-          <Scroll>
-            <CardList robots={searchedRobot} />
-          </Scroll>
-        </div>
-      );
-    }
+    return !robots.length ? (
+      <h1>Loading</h1>
+    ) : (
+      <div className='tc'>
+        <h1 className='f2'>Nos amis robots</h1>
+        <Searchbox searchChange={this.onSearchChange} />
+        <Scroll>
+          <CardList robots={searchedRobot} />
+        </Scroll>
+        <Footer />
+      </div>
+    );
   }
 }
 
