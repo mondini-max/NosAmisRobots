@@ -11,6 +11,12 @@ class App extends Component {
       robots: robots,
       searchfield: '',
     };
+    console.log('test performance 1', 'constructor()');
+  }
+  componentDidMount() {
+    console.log('check lifecycle methods');
+    this.setState({ robots: robots });
+    console.log('test performance 2', 'componentDidMount()');
   }
   onSearchChange = (event) => {
     let search = event.target.value;
@@ -22,6 +28,7 @@ class App extends Component {
         .toLowerCase()
         .includes(this.state.searchfield.toLowerCase());
     });
+    console.log('test performance 3', 'render()');
     // console.log(searchedRobot);
     return (
       <div className='tc'>
