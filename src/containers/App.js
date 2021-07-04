@@ -9,11 +9,13 @@ import Footer from '../components/Footer';
 const App = () => {
   const [robots, setRobots] = useState([]);
   const [searchfield, setSearchfield] = useState('');
+  // const [count, setCount] = useState(0);
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((user) => setRobots(user));
+    // console.log(count);
   }, []);
   const onSearchChange = (event) => {
     let search = event.target.value;
@@ -29,6 +31,7 @@ const App = () => {
   ) : (
     <div className='tc'>
       <h1 className='f2'>Nos amis robots</h1>
+      {/* <button onClick={() => setCount(count + 1)}>click me </button> */}
       <Searchbox searchChange={onSearchChange} />
       <Scroll>
         <ErrorBoundry>
