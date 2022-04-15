@@ -1,11 +1,11 @@
 {
   "name": "robotfriends",
   "version": "0.1.0",
-  "homepage": "https://moshtaghfr.github.io/NosAmisRobots",
+  "homepage": "https://mondini-max.github.io/NosAmisRobots",
   "private": true,
   "author": {
-    "name": "moshtagh mo",
-    "url": "https://github.com/moshtaghfr"
+    "name": "Maxime Mondini",
+    "url": "https://github.com/mondini-max"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
