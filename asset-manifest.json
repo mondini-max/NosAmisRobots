@@ -1,24 +1,14 @@
 {
   "files": {
-    "main.css": "/NosAmisRobots/static/css/main.8bb3820c.chunk.css",
-    "main.js": "/NosAmisRobots/static/js/main.317fea6a.chunk.js",
-    "main.js.map": "/NosAmisRobots/static/js/main.317fea6a.chunk.js.map",
-    "runtime-main.js": "/NosAmisRobots/static/js/runtime-main.7e7e6247.js",
-    "runtime-main.js.map": "/NosAmisRobots/static/js/runtime-main.7e7e6247.js.map",
-    "static/css/2.c1f4f5f4.chunk.css": "/NosAmisRobots/static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.ea856736.chunk.js": "/NosAmisRobots/static/js/2.ea856736.chunk.js",
-    "static/js/2.ea856736.chunk.js.map": "/NosAmisRobots/static/js/2.ea856736.chunk.js.map",
+    "main.css": "/NosAmisRobots/static/css/main.0f1379a6.css",
+    "main.js": "/NosAmisRobots/static/js/main.8a875f3d.js",
+    "static/media/SEGA.woff": "/NosAmisRobots/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/NosAmisRobots/index.html",
-    "static/css/2.c1f4f5f4.chunk.css.map": "/NosAmisRobots/static/css/2.c1f4f5f4.chunk.css.map",
-    "static/css/main.8bb3820c.chunk.css.map": "/NosAmisRobots/static/css/main.8bb3820c.chunk.css.map",
-    "static/js/2.ea856736.chunk.js.LICENSE.txt": "/NosAmisRobots/static/js/2.ea856736.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/NosAmisRobots/static/media/SEGA.47b4bfa9.woff"
+    "main.0f1379a6.css.map": "/NosAmisRobots/static/css/main.0f1379a6.css.map",
+    "main.8a875f3d.js.map": "/NosAmisRobots/static/js/main.8a875f3d.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.7e7e6247.js",
-    "static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.ea856736.chunk.js",
-    "static/css/main.8bb3820c.chunk.css",
-    "static/js/main.317fea6a.chunk.js"
+    "static/css/main.0f1379a6.css",
+    "static/js/main.8a875f3d.js"
   ]
 }
