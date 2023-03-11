@@ -14,7 +14,7 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            moshtagh
+            Maxime
           </a>{' '}
         </b>{' '}
         All Rights Reserved
